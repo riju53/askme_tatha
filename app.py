@@ -12,7 +12,7 @@ if not api_key:
 # ✅ THIS LINE WAS MISSING
 client = Mistral(api_key=api_key)
 model = "mistral-large-latest"
-st.image("logo.jpg", caption="AskMe App 🚀", width=150)
+st.image("logo.jpg", caption="AskMe App 🚀", width=100)
 # UI
 st.title("Askme anything 🚀")
 
