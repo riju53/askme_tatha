@@ -2,7 +2,15 @@
 import streamlit as st
 from mistralai.client import Mistral
 
-api_key = "ySNpbNwUdXVjoG2Hw1G6FaiPt3J6bZrZ"
+#api_key = "ySNpbNwUdXVjoG2Hw1G6FaiPt3J6bZrZ"
+api_key = st.secrets.get("MISTRAL_API_KEY")
+
+if not api_key:
+    st.error("API key missing")
+    st.stop()
+
+# ✅ THIS LINE WAS MISSING
+client = Mistral(api_key=api_key)
 model = "mistral-large-latest"
 
 # UI
