@@ -25,7 +25,7 @@ if submit:
         st.error("Mistral API key not found. Please add your API key to Colab secrets as 'MISTRAL_API_KEY'.")
     elif text.strip():
         with st.spinner("Thinking..."):
-            st.write("Model loaded ✅")
+            #st.write("Model loaded ✅")
 
             response = client.chat.complete(
                 model=model,
