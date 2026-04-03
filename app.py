@@ -38,3 +38,25 @@ if submit:
 
     else:
         st.warning("Please enter a question!")
+st.markdown(
+    """
+    <style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: transparent;
+        color: gray;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+    </style>
+
+    <div class="footer">
+        © 2026 AskMe App 🚀 | Built by Tathagata Nath with ❤️ using Mistral AI
+    </div>
+    """,
+    unsafe_allow_html=True
+)
